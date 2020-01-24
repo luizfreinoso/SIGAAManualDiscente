@@ -11,9 +11,11 @@ Bem vindo ao 'SIGAA Manual Discente'!
 Fique a vontade para nos ajudar a ampliar nosso manual e a corrigir eventuais erros, entre em contato com nossa Coordenação para qualquer informe.
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 4
+   
 
    sobre
+   m_assistencia
    SIGAA
    m_ensino
    m_biblioteca
