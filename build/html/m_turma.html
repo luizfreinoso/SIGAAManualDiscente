@@ -1,0 +1,566 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="pt-BR" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="pt-BR" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>8. Truma virtual &mdash; documentação SIGAA Manual Discente 1.0.0.0</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+        <script type="text/javascript" src="_static/translations.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Índice" href="genindex.html" />
+    <link rel="search" title="Buscar" href="search.html" />
+    <link rel="prev" title="7. Perfil - Dados Institucionais" href="m_perfil.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: green" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> SIGAA Manual Discente
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0.0.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="sobre.html">Sobre</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SIGAA.html">1. Introdução ao SIGAA</a></li>
+<li class="toctree-l1"><a class="reference internal" href="m_ensino.html">2. Módulo Ensino</a></li>
+<li class="toctree-l1"><a class="reference internal" href="m_biblioteca.html">3. Biblioteca</a></li>
+<li class="toctree-l1"><a class="reference internal" href="m_modulos.html">4. Módulos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="m_mensagens.html">5. Caixa Postal</a></li>
+<li class="toctree-l1"><a class="reference internal" href="m_senha.html">6. Alterar senha</a></li>
+<li class="toctree-l1"><a class="reference internal" href="m_perfil.html">7. Perfil - Dados Institucionais</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">8. Truma virtual</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#interface">8.1. Interface</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#manipuladores">8.1.1. Manipuladores</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#menu-turma-virtual">8.2. Menu Turma Virtual</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#principal">8.2.1. Principal</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#plano-da-disciplina">8.2.2. Plano da disciplina</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#participantes">8.2.3. Participantes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#foruns">8.2.4. Fóruns</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#chat-da-turma">8.2.5. Chat da Turma</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#video-chat-ao-vivo">8.2.6. Video Chat Ao Vivo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#chats-agendados">8.2.7. Chats Agendados</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#noticias">8.2.8. Notícias</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#twitter">8.2.9. Twitter</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#menu-alunos">8.3. Menu Alunos</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#frequencia">8.3.1. Frequência</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ver-grupo">8.3.2. Ver Grupo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ver-notas">8.3.3. Ver Notas</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#menu-materiais">8.4. Menu Materiais</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#conteudo-pagina-web">8.4.1. Conteúdo/Página web</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#referencias">8.4.2. Referências</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#videos">8.4.3. Vídeos</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#arquivos">8.4.4. Arquivos</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#menu-atividades">8.5. Menu Atividades</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#avaliacoes">8.5.1. Avaliações</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#enquetes">8.5.2. Enquetes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tarefas">8.5.3. Tarefas</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#questionarios">8.5.4. Questionários</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#configuracoes">8.6. Configurações</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#estatistica">8.7. Estatística</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#ajuda">8.8. Ajuda</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">SIGAA Manual Discente</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>8. Truma virtual</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/m_turma.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="truma-virtual">
+<h1>8. Truma virtual<a class="headerlink" href="#truma-virtual" title="Link permanente para este título">¶</a></h1>
+<div class="contents local topic" id="sumario">
+<ul class="simple">
+<li><p><a class="reference internal" href="#interface" id="id27">8.1. Interface</a></p>
+<ul>
+<li><p><a class="reference internal" href="#manipuladores" id="id28">8.1.1. Manipuladores</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#menu-turma-virtual" id="id29">8.2. Menu Turma Virtual</a></p>
+<ul>
+<li><p><a class="reference internal" href="#principal" id="id30">8.2.1. Principal</a></p></li>
+<li><p><a class="reference internal" href="#plano-da-disciplina" id="id31">8.2.2. Plano da disciplina</a></p></li>
+<li><p><a class="reference internal" href="#participantes" id="id32">8.2.3. Participantes</a></p></li>
+<li><p><a class="reference internal" href="#foruns" id="id33">8.2.4. Fóruns</a></p></li>
+<li><p><a class="reference internal" href="#chat-da-turma" id="id34">8.2.5. Chat da Turma</a></p></li>
+<li><p><a class="reference internal" href="#video-chat-ao-vivo" id="id35">8.2.6. Video Chat Ao Vivo</a></p></li>
+<li><p><a class="reference internal" href="#chats-agendados" id="id36">8.2.7. Chats Agendados</a></p></li>
+<li><p><a class="reference internal" href="#noticias" id="id37">8.2.8. Notícias</a></p></li>
+<li><p><a class="reference internal" href="#twitter" id="id38">8.2.9. Twitter</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#menu-alunos" id="id39">8.3. Menu Alunos</a></p>
+<ul>
+<li><p><a class="reference internal" href="#frequencia" id="id40">8.3.1. Frequência</a></p></li>
+<li><p><a class="reference internal" href="#ver-grupo" id="id41">8.3.2. Ver Grupo</a></p></li>
+<li><p><a class="reference internal" href="#ver-notas" id="id42">8.3.3. Ver Notas</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#menu-materiais" id="id43">8.4. Menu Materiais</a></p>
+<ul>
+<li><p><a class="reference internal" href="#conteudo-pagina-web" id="id44">8.4.1. Conteúdo/Página web</a></p></li>
+<li><p><a class="reference internal" href="#referencias" id="id45">8.4.2. Referências</a></p></li>
+<li><p><a class="reference internal" href="#videos" id="id46">8.4.3. Vídeos</a></p></li>
+<li><p><a class="reference internal" href="#arquivos" id="id47">8.4.4. Arquivos</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#menu-atividades" id="id48">8.5. Menu Atividades</a></p>
+<ul>
+<li><p><a class="reference internal" href="#avaliacoes" id="id49">8.5.1. Avaliações</a></p></li>
+<li><p><a class="reference internal" href="#enquetes" id="id50">8.5.2. Enquetes</a></p></li>
+<li><p><a class="reference internal" href="#tarefas" id="id51">8.5.3. Tarefas</a></p></li>
+<li><p><a class="reference internal" href="#questionarios" id="id52">8.5.4. Questionários</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#configuracoes" id="id53">8.6. Configurações</a></p></li>
+<li><p><a class="reference internal" href="#estatistica" id="id54">8.7. Estatística</a></p></li>
+<li><p><a class="reference internal" href="#ajuda" id="id55">8.8. Ajuda</a></p></li>
+</ul>
+</div>
+<p>Para entrar em uma sala virtual é simples. Ao realizar login, as suas disciplinas terão uma sala virtual individual cada, sendo listadas no ‘Painel Discente’ na área ‘Turmas do Semestre’. Quando as disciplinas são frechadas pelos professores elas deixam de fazer parte desta lista no semestre subsequente, sendo arquivadas.</p>
+<div class="figure align-default" id="id3">
+<img alt="'Turmas do Semestre' no 'Portal Discente'." src="_images/img_30.png" />
+<p class="caption"><span class="caption-text">Identificação da área ‘Turmas do Semestre’ no ‘Portal Discente’.</span><a class="headerlink" href="#id3" title="Link Permanente para essa imagem">¶</a></p>
+</div>
+<p>Para acessar as turmas virtuais arquivadas, na área ‘Turmas do Semestre’ clique no link ‘Ver turmas anteriores’.</p>
+<div class="figure align-default" id="id4">
+<img alt="'Turmas do Semestre' no 'Portal Discente'." src="_images/img_31.png" />
+<p class="caption"><span class="caption-text">Identificação da área ‘Turmas do Semestre’ no ‘Portal Discente’.</span><a class="headerlink" href="#id4" title="Link Permanente para essa imagem">¶</a></p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Nota</p>
+<p>A página de ‘Turmas Virtuais’ contém todas as turmas virtuais que você já cursou. Mantendo materiais, atividades e dados históricos.</p>
+</div>
+<div class="section" id="interface">
+<h2><a class="toc-backref" href="#id27">8.1. Interface</a><a class="headerlink" href="#interface" title="Link permanente para este título">¶</a></h2>
+<div class="figure align-default" id="id5">
+<img alt="Recursos da 'Turma virtual'." src="_images/img_32.png" />
+<p class="caption"><span class="caption-text">Recursos dentro da ‘Turma Virtual’.</span><a class="headerlink" href="#id5" title="Link Permanente para essa imagem">¶</a></p>
+</div>
+<p>Nesta interface você nota os seguintes recursos/indicadores:</p>
+<ol class="arabic simple">
+<li><p>Identificação: Seu nome de estudante, unidade a qual está vinculado, semestre atual, código do diário seguido do nome do componente curricular e semestre ao qual você estudou/estuda e código da turma.</p></li>
+<li><p>Atalhos: Ao clicar no ícone da ‘Casa’ você será redirecionado ao ‘Portal Discente’, o ícone da ‘Impressora’ imprime o conteúdo visível na viewport (Janela de visão) e o ‘Setas circulares’ atualiza a página e o conteúdo da viewport. O botão ‘Trocar de Turma’ o auxilia na troca entre turmas virtuais diferentes. Por sua vez, o ícone ‘Cog’ contém configurações que você pode fazer em sua conta.</p></li>
+<li><p>Painéis de informação: Estes painéis agrupam informações importantes para sua orientação na disciplina, como ‘Notícias’ que são informes e avisos ‘Enquete’ que pode ser uma atividade ou levantamento do professor a ser respondido por você. ‘Atividades’ é um dos mais importantes entre os painéis, pois organiza tudo que esta para ser realizado na disciplina. ‘Avaliações’ apresenta as datas, hora e locais de provas e ‘Mensagens do Fóruns’ o atualiza dos tópicos mais atuais.</p></li>
+<li><p>Viewport ou Janela de Visão: É aqui que são apresentados ou renderizados os recurso e informações de acordo com, sua navegação pelo ‘Menu Turma Virtual’. Atualmente, você está vendo a vista ‘Principal’.</p></li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Nota</p>
+<p>Focaremos apenas nos recursos importantes e de uso notório.</p>
+</div>
+<div class="section" id="manipuladores">
+<h3><a class="toc-backref" href="#id28">8.1.1. Manipuladores</a><a class="headerlink" href="#manipuladores" title="Link permanente para este título">¶</a></h3>
+<p>Geralmente serão apresentados o seguintes manipuladores nas diversas janelas e recursos:</p>
+<ol class="arabic simple">
+<li><p>Visualizar (ícone ‘Lupa’): Para ler algum recurso/documento/dado;</p></li>
+<li><p>Alterar (ícone ‘Lápis’): Para modificar/atualizar um recurso/documento/dado;</p></li>
+<li><p>Remover (ícone ‘Lixeira’): Para deletar/remover um recurso/documento/dado.</p></li>
+</ol>
+<div class="figure align-default" id="id6">
+<img alt="Manipuladores gerais da 'Turma virtual'." src="_images/img_52.png" />
+<p class="caption"><span class="caption-text">Manipuladores gerais da ‘Turma Virtual’.</span><a class="headerlink" href="#id6" title="Link Permanente para essa imagem">¶</a></p>
+</div>
+</div>
+</div>
+<div class="section" id="menu-turma-virtual">
+<h2><a class="toc-backref" href="#id29">8.2. Menu Turma Virtual</a><a class="headerlink" href="#menu-turma-virtual" title="Link permanente para este título">¶</a></h2>
+<p>Para navegar no ambiente da sua turma virtual você utilizará o ‘Menu Turma Virtual’ para assim acessar os diversos recursos de sua disciplina, cada sala tem este menu, ao clicar em um dos seus itens, o resultado de cada operação será apresentado, na maioria das vezes na ‘Viewport’.</p>
+<div class="figure align-default" id="id7">
+<img alt="Menu principal da 'Turma virtual'." src="_images/img_33.png" />
+<p class="caption"><span class="caption-text">Menu principal da ‘Turma Virtual’.</span><a class="headerlink" href="#id7" title="Link Permanente para essa imagem">¶</a></p>
+</div>
+<div class="section" id="principal">
+<h3><a class="toc-backref" href="#id30">8.2.1. Principal</a><a class="headerlink" href="#principal" title="Link permanente para este título">¶</a></h3>
+<p>Quando entramos na Sala Virtual somos redirecionados a tela ‘Principal’, acessível pela opção ‘Principal’ do ‘Menu Turma Virtual’. Contém de forma cronológica os conteúdos e materiais inseridos pelo professor ao longo do curso como você pode notar na figura da seção <a href="#id5">8.1. Interface</a>.</p>
+<div class="admonition note">
+<p class="admonition-title">Nota</p>
+<p>Todos os recursos podem aparecer na sua página ‘Principal’. O que as outras operações fornecem de forma geral são filtros para o emaranhado de tecnologias que temos na turma virtual.</p>
+</div>
+</div>
+<div class="section" id="plano-da-disciplina">
+<h3><a class="toc-backref" href="#id31">8.2.2. Plano da disciplina</a><a class="headerlink" href="#plano-da-disciplina" title="Link permanente para este título">¶</a></h3>
+<p>O plano da disciplina fornece ao estudante um vão completa do que o mesmo irá estudar, os conteúdos, dias das aulas, datas das avaliações, referências e livros utilizados pelo professor, ou seja, o planejamento que foi desenvolvido para ser executado em sala de aula.</p>
+<div class="figure align-default" id="id8">
+<img alt="Plano da disciplina da 'Turma virtual'." src="_images/img_34.png" />
+<p class="caption"><span class="caption-text">Visualização do ‘Plano da Disciplina’ da ‘Turma Virtual’.</span><a class="headerlink" href="#id8" title="Link Permanente para essa imagem">¶</a></p>
+</div>
+</div>
+<div class="section" id="participantes">
+<h3><a class="toc-backref" href="#id32">8.2.3. Participantes</a><a class="headerlink" href="#participantes" title="Link permanente para este título">¶</a></h3>
+<p>Nesta janela você tem acesso a todos integrantes da turma virtual, assim, professor e alunos podem ter acesso ao nome, e-mail para contato e curso ao qual outro estudante faz parte. Este recurso foi desenvolvido para facilitar a interação entre alunos e trabalhos em grupo.</p>
+<div class="admonition note">
+<p class="admonition-title">Nota</p>
+<p>Por este motivo, reforçamos para que você insira uma foto em seu perfil.</p>
+</div>
+<div class="figure align-default" id="id9">
+<img alt="Participantes da 'Turma virtual'." src="_images/img_35.png" />
+<p class="caption"><span class="caption-text">Visualização dos ‘Participantes’ da ‘Turma Virtual’.</span><a class="headerlink" href="#id9" title="Link Permanente para essa imagem">¶</a></p>
+</div>
+</div>
+<div class="section" id="foruns">
+<h3><a class="toc-backref" href="#id33">8.2.4. Fóruns</a><a class="headerlink" href="#foruns" title="Link permanente para este título">¶</a></h3>
+<p>Os fóruns são espaços de debate e discussão assíncrona, onde tópicos relativos a sua disciplina são abertos, possibilitando interação da turma.</p>
+<div class="figure align-default" id="id10">
+<img alt="Fóruns da 'Turma virtual'." src="_images/img_36.png" />
+<p class="caption"><span class="caption-text">‘Fóruns’ da ‘Turma Virtual’.</span><a class="headerlink" href="#id10" title="Link Permanente para essa imagem">¶</a></p>
+</div>
+</div>
+<div class="section" id="chat-da-turma">
+<h3><a class="toc-backref" href="#id34">8.2.5. Chat da Turma</a><a class="headerlink" href="#chat-da-turma" title="Link permanente para este título">¶</a></h3>
+<p>Durante as aulas ou mesmo no espaço da escola, comumente os estudantes estão dispersos, o ‘Chat da Turma’ possibilita que todos os participantes da turma virtual interajam em tempo real, podendo trocar ideias e interagir na disciplina.</p>
+<div class="admonition note">
+<p class="admonition-title">Nota</p>
+<p>Recurso recomendado para que durante as aulas de laboratório ou aquelas que exijam interação entre os alunos, os estudantes possam conversar sem transitar e/ou conversar em sala.</p>
+</div>
+<div class="figure align-default" id="id11">
+<img alt="Chat da 'Turma virtual'." src="_images/img_37.png" />
+<p class="caption"><span class="caption-text">‘Chat’ da ‘Turma Virtual’.</span><a class="headerlink" href="#id11" title="Link Permanente para essa imagem">¶</a></p>
+</div>
+</div>
+<div class="section" id="video-chat-ao-vivo">
+<h3><a class="toc-backref" href="#id35">8.2.6. Video Chat Ao Vivo</a><a class="headerlink" href="#video-chat-ao-vivo" title="Link permanente para este título">¶</a></h3>
+<div class="admonition-todo admonition" id="id1">
+<p class="admonition-title">Por fazer</p>
+<p><em>Instrumento em fase de implantação. Ainda fora de uso.</em></p>
+</div>
+<p>Este recurso é similar ao chat apresentado anteriormente, porém, o intuito é utilizar áudio e vídeo durante as interações.</p>
+<div class="figure align-default" id="id12">
+<img alt="Video Chat Ao Vivo da 'Turma virtual'." src="_images/img_38.png" />
+<p class="caption"><span class="caption-text">‘Video Chat Ao Vivo’ da ‘Turma Virtual’.</span><a class="headerlink" href="#id12" title="Link Permanente para essa imagem">¶</a></p>
+</div>
+</div>
+<div class="section" id="chats-agendados">
+<h3><a class="toc-backref" href="#id36">8.2.7. Chats Agendados</a><a class="headerlink" href="#chats-agendados" title="Link permanente para este título">¶</a></h3>
+<p>Este recurso é simples, seu professor pode marcar chats, aqui você tem a listagem destas datas.</p>
+</div>
+<div class="section" id="noticias">
+<h3><a class="toc-backref" href="#id37">8.2.8. Notícias</a><a class="headerlink" href="#noticias" title="Link permanente para este título">¶</a></h3>
+<p>O professor da turma pode cadastrar noticias, as mesmas podem aparecer na vista ‘Principal’ quando cadastradas. Todas as notícias são listadas nesta janela.</p>
+<div class="figure align-default" id="id13">
+<img alt="Notícias da 'Turma virtual'." src="_images/img_40.png" />
+<p class="caption"><span class="caption-text">‘Notícias’ da ‘Turma Virtual’.</span><a class="headerlink" href="#id13" title="Link Permanente para essa imagem">¶</a></p>
+</div>
+<div class="figure align-default" id="id14">
+<img alt="Notícias na janela ''Principal' da 'Turma virtual'." src="_images/img_39.png" />
+<p class="caption"><span class="caption-text">‘Notícias’ na ‘Principal’ da ‘Turma Virtual’.</span><a class="headerlink" href="#id14" title="Link Permanente para essa imagem">¶</a></p>
+</div>
+</div>
+<div class="section" id="twitter">
+<h3><a class="toc-backref" href="#id38">8.2.9. Twitter</a><a class="headerlink" href="#twitter" title="Link permanente para este título">¶</a></h3>
+<p>Com vistas ao uso das redes sociais para dar maio suporte a educação, seu professor poderá se desejar e julgar necessário utilizar o Twitter para amparo as aulas.</p>
+<div class="figure align-default" id="id15">
+<img alt="'Twitter' da 'Turma virtual'." src="_images/img_41.png" />
+<p class="caption"><span class="caption-text">‘Twitter’ da ‘Turma virtual’.</span><a class="headerlink" href="#id15" title="Link Permanente para essa imagem">¶</a></p>
+</div>
+</div>
+</div>
+<div class="section" id="menu-alunos">
+<h2><a class="toc-backref" href="#id39">8.3. Menu Alunos</a><a class="headerlink" href="#menu-alunos" title="Link permanente para este título">¶</a></h2>
+<p>No menu ‘Alunos’ você tem operações relativas ao seu cadastro na turma, como frequências, notas e grupos de trabalho ao qual pertence.</p>
+<div class="figure align-default" id="id16">
+<img alt="Menu 'Alunos' da 'Turma virtual'." src="_images/img_53.png" />
+<p class="caption"><span class="caption-text">Menu ‘Alunos da ‘Turma virtual’.</span><a class="headerlink" href="#id16" title="Link Permanente para essa imagem">¶</a></p>
+</div>
+<div class="section" id="frequencia">
+<h3><a class="toc-backref" href="#id40">8.3.1. Frequência</a><a class="headerlink" href="#frequencia" title="Link permanente para este título">¶</a></h3>
+<p>Nesta janela você pode acompanhar suas frequências e faltas.</p>
+<div class="figure align-default" id="id17">
+<img alt="'Frequência' da 'Turma virtual'." src="_images/img_42.png" />
+<p class="caption"><span class="caption-text">‘Frequência’ da ‘Turma virtual’.</span><a class="headerlink" href="#id17" title="Link Permanente para essa imagem">¶</a></p>
+</div>
+</div>
+<div class="section" id="ver-grupo">
+<h3><a class="toc-backref" href="#id41">8.3.2. Ver Grupo</a><a class="headerlink" href="#ver-grupo" title="Link permanente para este título">¶</a></h3>
+<p>Cotidianamente seu professor pode criar grupos de trabalho para as diversas tarefas e atividades dentro de sua turma virtual.</p>
+<div class="figure align-default" id="id18">
+<img alt="'Ver Grupo' da 'Turma virtual'." src="_images/img_44.png" />
+<p class="caption"><span class="caption-text">‘Ver Grupo’ da ‘Turma virtual’.</span><a class="headerlink" href="#id18" title="Link Permanente para essa imagem">¶</a></p>
+</div>
+</div>
+<div class="section" id="ver-notas">
+<h3><a class="toc-backref" href="#id42">8.3.3. Ver Notas</a><a class="headerlink" href="#ver-notas" title="Link permanente para este título">¶</a></h3>
+<p>Para visualizar suas notas, basta acessar a operação ‘Ver Notas’ do Menu ‘Alunos’.</p>
+<div class="figure align-default" id="id19">
+<img alt="'Ver Notas' da 'Turma virtual'." src="_images/img_43.png" />
+<p class="caption"><span class="caption-text">‘Ver Notas’ da ‘Turma virtual’.</span><a class="headerlink" href="#id19" title="Link Permanente para essa imagem">¶</a></p>
+</div>
+</div>
+</div>
+<div class="section" id="menu-materiais">
+<h2><a class="toc-backref" href="#id43">8.4. Menu Materiais</a><a class="headerlink" href="#menu-materiais" title="Link permanente para este título">¶</a></h2>
+<p>No menu ‘Materiais’ você tem acesso às diversas referências e materiais disponibilizados por seu professor.</p>
+<div class="section" id="conteudo-pagina-web">
+<h3><a class="toc-backref" href="#id44">8.4.1. Conteúdo/Página web</a><a class="headerlink" href="#conteudo-pagina-web" title="Link permanente para este título">¶</a></h3>
+<p>São links para recursos externos e páginas da internet que podem complementar seu conhecimento na disciplina.</p>
+</div>
+<div class="section" id="referencias">
+<h3><a class="toc-backref" href="#id45">8.4.2. Referências</a><a class="headerlink" href="#referencias" title="Link permanente para este título">¶</a></h3>
+<p>São as biografias básicas e complementares utilizadas por seu professor. Ter acesso a este referencial é necessário para que você vasculhe de forma melhor orientada suas buscas pela internet e na biblioteca.</p>
+<div class="figure align-default" id="id20">
+<img alt="'Referências' da 'Turma virtual'." src="_images/img_45.png" />
+<p class="caption"><span class="caption-text">‘Referências’ da ‘Turma virtual’.</span><a class="headerlink" href="#id20" title="Link Permanente para essa imagem">¶</a></p>
+</div>
+</div>
+<div class="section" id="videos">
+<h3><a class="toc-backref" href="#id46">8.4.3. Vídeos</a><a class="headerlink" href="#videos" title="Link permanente para este título">¶</a></h3>
+<p>São seleções de vídeos/filmes disponibilizados para aprofundamento na disciplina.</p>
+</div>
+<div class="section" id="arquivos">
+<h3><a class="toc-backref" href="#id47">8.4.4. Arquivos</a><a class="headerlink" href="#arquivos" title="Link permanente para este título">¶</a></h3>
+<p>Arquivos e documentos disponibilizados pelo professor para estudo e aprofundamento na disciplina.</p>
+<div class="figure align-default" id="id21">
+<img alt="'Arquivos' da 'Turma virtual'." src="_images/img_46.png" />
+<p class="caption"><span class="caption-text">‘Arquivos’ da ‘Turma virtual’.</span><a class="headerlink" href="#id21" title="Link Permanente para essa imagem">¶</a></p>
+</div>
+</div>
+</div>
+<div class="section" id="menu-atividades">
+<h2><a class="toc-backref" href="#id48">8.5. Menu Atividades</a><a class="headerlink" href="#menu-atividades" title="Link permanente para este título">¶</a></h2>
+<p>Durante seu tempo na turma virtual para uma disciplina, o professor pode passar diversos tipos de atividades além das avaliações, como pesquisas, enquetes, fóruns, chats, questionários, tarefas e muitas outras formas avaliativas.</p>
+<p>Pensando na organização deste tipo de demanda o SIGAA conta com um menu ‘Atividades’ com disponibilização de diversas atividades para seu acompanhamento.</p>
+<div class="figure align-default" id="id22">
+<img alt="'Menu Atividades' da 'Turma virtual'." src="_images/img_55.png" />
+<p class="caption"><span class="caption-text">‘Menu Atividades’ da ‘Turma virtual’.</span><a class="headerlink" href="#id22" title="Link Permanente para essa imagem">¶</a></p>
+</div>
+<div class="section" id="avaliacoes">
+<h3><a class="toc-backref" href="#id49">8.5.1. Avaliações</a><a class="headerlink" href="#avaliacoes" title="Link permanente para este título">¶</a></h3>
+<p>A janela de avaliações é consultiva, onde apresenta as datas, hora e local de provas.</p>
+<div class="figure align-default" id="id23">
+<img alt="'Avaliações' da 'Turma virtual'." src="_images/img_48.png" />
+<p class="caption"><span class="caption-text">‘Avaliações’ da ‘Turma virtual’.</span><a class="headerlink" href="#id23" title="Link Permanente para essa imagem">¶</a></p>
+</div>
+</div>
+<div class="section" id="enquetes">
+<h3><a class="toc-backref" href="#id50">8.5.2. Enquetes</a><a class="headerlink" href="#enquetes" title="Link permanente para este título">¶</a></h3>
+<p>De forma simplificada são levantamentos realizados pelo seu professor.</p>
+</div>
+<div class="section" id="tarefas">
+<h3><a class="toc-backref" href="#id51">8.5.3. Tarefas</a><a class="headerlink" href="#tarefas" title="Link permanente para este título">¶</a></h3>
+<p>Tarefas são atividades online ou off-line que seu professor poderá cobrar durante seu tempo na turma virtual, podem ser avaliativas ou não. Você poderá enviar resposta para tarefas dentro da mesma ou enviando arquivo a ser anexado a atividade, tudo depende das configurações impostas pelo professor, bem como data de abertura e fechamento da atividade.</p>
+<div class="admonition note">
+<p class="admonition-title">Nota</p>
+<p>O estudante que não realizar Tarefas avaliativas sem justificativa válida poderá ficar sem nota.</p>
+</div>
+<div class="figure align-default" id="id24">
+<img alt="'Tarefas' da 'Turma virtual'." src="_images/img_49.png" />
+<p class="caption"><span class="caption-text">‘Tarefas’ da ‘Turma virtual’.</span><a class="headerlink" href="#id24" title="Link Permanente para essa imagem">¶</a></p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Nota</p>
+<p>As tarefas aqui estão filtradas em ordem cronológica. As mesmas se encontram distribuídas na vista ‘Principal’.</p>
+</div>
+</div>
+<div class="section" id="questionarios">
+<h3><a class="toc-backref" href="#id52">8.5.4. Questionários</a><a class="headerlink" href="#questionarios" title="Link permanente para este título">¶</a></h3>
+<p>São formulários com diversas questões, misturando tanto discursivas quanto alternativas, bem como múltipla escolha. O professor pode configurar o formato dos questionários o quanto julgar necessário, fornecendo nota avaliativa ou não, ate mesmo colocando tempo para realização deste tipo de tarefa e data de abertura e fechamento da atividade.</p>
+<div class="admonition note">
+<p class="admonition-title">Nota</p>
+<p>O estudante que não realizar Questionários Avaliativos sem justificativa válida poderá ficar sem nota.</p>
+</div>
+<div class="figure align-default" id="id25">
+<img alt="'Questionários' da 'Turma virtual'." src="_images/img_50.png" />
+<p class="caption"><span class="caption-text">‘Questionários’ da ‘Turma virtual’.</span><a class="headerlink" href="#id25" title="Link Permanente para essa imagem">¶</a></p>
+</div>
+<div class="figure align-default" id="id26">
+<img alt="Visualização de um Questionário em uma 'Turma virtual'." src="_images/img_51.png" />
+<p class="caption"><span class="caption-text">Visualização de um Questionário em uma ‘Turma virtual’.</span><a class="headerlink" href="#id26" title="Link Permanente para essa imagem">¶</a></p>
+</div>
+</div>
+</div>
+<div class="section" id="configuracoes">
+<h2><a class="toc-backref" href="#id53">8.6. Configurações</a><a class="headerlink" href="#configuracoes" title="Link permanente para este título">¶</a></h2>
+<p>Fornece algumas possibilidades de configuração ao estudante.</p>
+</div>
+<div class="section" id="estatistica">
+<h2><a class="toc-backref" href="#id54">8.7. Estatística</a><a class="headerlink" href="#estatistica" title="Link permanente para este título">¶</a></h2>
+<p>Fornecem dados estatísticos da turma e do estudante acerca de seu desempenho na turma virtual.</p>
+</div>
+<div class="section" id="ajuda">
+<h2><a class="toc-backref" href="#id55">8.8. Ajuda</a><a class="headerlink" href="#ajuda" title="Link permanente para este título">¶</a></h2>
+<div class="admonition-todo admonition" id="id2">
+<p class="admonition-title">Por fazer</p>
+<p><em>Instrumento em fase de implantação. Ainda fora de uso.</em></p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="m_perfil.html" class="btn btn-neutral float-left" title="7. Perfil - Dados Institucionais" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, Luiz Fernando Reinoso [IFPA/Óbidos]
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
