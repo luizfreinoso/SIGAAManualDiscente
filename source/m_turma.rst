@@ -1,4 +1,4 @@
-﻿8. Truma virtual
+﻿8. Turma virtual
 ================
 .. contents::
   :local:
