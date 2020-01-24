@@ -1,4 +1,4 @@
-﻿8. Truma virtual
+﻿8. Turma virtual
 ================
 .. contents::
   :local:
@@ -17,7 +17,7 @@ Para acessar as turmas virtuais arquivadas, na área 'Turmas do Semestre' clique
 
     Identificação da área 'Turmas do Semestre' no 'Portal Discente'.
 
-.. nota::
+.. note::
     A página de 'Turmas Virtuais' contém todas as turmas virtuais que você já cursou. Mantendo materiais, atividades e dados históricos.
 
 8.1. Interface
@@ -40,7 +40,7 @@ Nesta interface você nota os seguintes recursos/indicadores:
 
 #. Viewport ou Janela de Visão: É aqui que são apresentados ou renderizados os recurso e informações de acordo com, sua navegação pelo 'Menu Turma Virtual'. Atualmente, você está vendo a vista 'Principal'.
 
-.. nota::
+.. note::
 	Focaremos apenas nos recursos importantes e de uso notório.
 
 8.1.1. Manipuladores
@@ -97,7 +97,7 @@ O plano da disciplina fornece ao estudante um vão completa do que o mesmo irá 
 
 Nesta janela você tem acesso a todos integrantes da turma virtual, assim, professor e alunos podem ter acesso ao nome, e-mail para contato e curso ao qual outro estudante faz parte. Este recurso foi desenvolvido para facilitar a interação entre alunos e trabalhos em grupo.
 
-.. nota::
+.. note::
 
 	Por este motivo, reforçamos para que você insira uma foto em seu perfil.
 
@@ -121,7 +121,7 @@ Os fóruns são espaços de debate e discussão assíncrona, onde tópicos relat
 
 Durante as aulas ou mesmo no espaço da escola, comumente os estudantes estão dispersos, o 'Chat da Turma' possibilita que todos os participantes da turma virtual interajam em tempo real, podendo trocar ideias e interagir na disciplina.
 
-.. nota::
+.. note::
 	Recurso recomendado para que durante as aulas de laboratório ou aquelas que exijam interação entre os alunos, os estudantes possam conversar sem transitar e/ou conversar em sala.
 
 .. figure:: _media/img_37.png
